@@ -4,9 +4,9 @@ import JsonLd from '../components/JsonLd';
 const BASE_URL = 'https://makeupstudio-nextjs.vercel.app';
 
 export const metadata = {
-  title: 'SISIRO Makeup Studio | Luxury Bridal Makeup in Hyderabad',
+  title: 'Sisro\'s Makeup Studio | Luxury Bridal Makeup in Hyderabad',
   description:
-    'SISIRO offers luxury bridal makeup and personalised beauty services in Hyderabad. Flawless looks for weddings, receptions, and every special occasion.',
+    'Sisro\'s offers luxury bridal makeup and personalised beauty services in Hyderabad. Flawless looks for weddings, receptions, and every special occasion.',
   keywords: [
     'best makeup studio Hyderabad',
     'makeupstudio hyderabad',
@@ -14,22 +14,22 @@ export const metadata = {
     'bridal makeup Hyderabad',
     'luxury makeup studio',
     'wedding makeup artist',
-    'SISIRO makeup studio',
+    'Sisro\'s makeup studio',
     'beauty services Hyderabad',
   ],
   alternates: { canonical: BASE_URL },
   openGraph: {
     type: 'website',
     url: BASE_URL,
-    title: 'SISIRO Makeup Studio | Luxury Bridal Makeup in Hyderabad',
+    title: 'Sisro\'s Makeup Studio | Luxury Bridal Makeup in Hyderabad',
     description:
-      'SISIRO offers luxury bridal makeup and personalised beauty services in Hyderabad. Flawless looks for weddings, receptions, and every special occasion.',
-    images: [{ url: '/images/Bridal.jpg', width: 1200, height: 630, alt: 'SISIRO Makeup Studio — Luxury Bridal Makeup Hyderabad' }],
+      'Sisro\'s offers luxury bridal makeup and personalised beauty services in Hyderabad. Flawless looks for weddings, receptions, and every special occasion.',
+    images: [{ url: '/images/Bridal.jpg', width: 1200, height: 630, alt: 'Sisro\'s Makeup Studio — Luxury Bridal Makeup Hyderabad' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SISIRO Makeup Studio | Luxury Bridal Makeup in Hyderabad',
-    description: 'SISIRO offers luxury bridal makeup and personalised beauty services in Hyderabad.',
+    title: 'Sisro\'s Makeup Studio | Luxury Bridal Makeup in Hyderabad',
+    description: 'Sisro\'s offers luxury bridal makeup and personalised beauty services in Hyderabad.',
     images: ['/images/Bridal.jpg'],
   },
 };
@@ -37,7 +37,7 @@ export const metadata = {
 const homeSchema = {
   '@context': 'https://schema.org',
   '@type': 'BeautySalon',
-  name: 'SISIRO Makeup Studio',
+  name: 'Sisro\'s Makeup Studio',
   description:
     'Luxury bridal makeup studio and professional beauty academy in Hyderabad offering personalised makeup services for weddings, receptions, and all special occasions.',
   url: BASE_URL,
@@ -87,3 +87,4 @@ export default function Home() {
     </>
   );
 }
+

@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
 
-export const alt = 'SISIRO Makeup Studio — Luxury Bridal Makeup Hyderabad';
+export const alt = 'Sisro\'s Makeup Studio — Luxury Bridal Makeup Hyderabad';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -95,7 +95,7 @@ export default function OGImage() {
             textTransform: 'uppercase',
           }}
         >
-          SISIRO
+          Sisro&apos;s
         </h1>
 
         {/* Divider */}
@@ -125,3 +125,4 @@ export default function OGImage() {
     { ...size }
   );
 }
+

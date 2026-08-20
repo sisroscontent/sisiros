@@ -3,11 +3,11 @@ export default function HeroContent() {
     <div className="flex flex-col md:my-9 h-full md:px-2 md:ml-5">
       {/* Small Heading */}
       <p className="uppercase tracking-[4px] text-[#D4AF37] text-1 font-medium mb-8">
-        Welcome to SISRO'S
+        Welcome to Sisro&apos;s
       </p>
 
       <p className="text-gray-400 text-base lg:text-[19px] leading-8 max-w-xl mb-4">
-        At Sisiro&apos;s, we believe the foundation of a beautiful look starts with
+        At Sisro&apos;s, we believe the foundation of a beautiful look starts with
         understanding your skin.
       </p>
 
@@ -19,7 +19,7 @@ export default function HeroContent() {
       </p>
 
       <p className="text-gray-400 text-base lg:text-[19px] leading-8 max-w-xl mb-6">
-        Every face is a unique canvas, at Sisiro&apos;s we use professional analysis
+        Every face is a unique canvas, at Sisro&apos;s we use professional analysis
         to tailor a personalised look that enhances your already existing beauty
         while also caring for your skin.
       </p>
@@ -35,3 +35,4 @@ export default function HeroContent() {
     </div>
   );
 }
+

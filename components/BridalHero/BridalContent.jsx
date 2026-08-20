@@ -6,7 +6,7 @@ export default function BridalContent() {
       </p>
 
       <p className="text-gray-400 text-base lg:text-[19px] leading-8 max-w-xl mb-4 md:mb-6">
-        At Sisiro&apos;s we believe that every wedding day deserves makeup that
+        At Sisro&apos;s we believe that every wedding day deserves makeup that
         is as unique and as special as you are.
       </p>
 

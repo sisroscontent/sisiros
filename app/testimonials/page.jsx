@@ -13,7 +13,7 @@ const testimonialData = [
     img: '/images/Gallery/Gallery-1.png',
     rating: 5,
     review:
-      'SISIRO made my wedding day absolutely magical. The bridal makeup was flawless — every photograph looks like a dream. Dr. Preethi understood exactly what I wanted and exceeded my expectations.',
+      'Sisro\'s made my wedding day absolutely magical. The bridal makeup was flawless — every photograph looks like a dream. Dr. Preethi understood exactly what I wanted and exceeded my expectations.',
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const testimonialData = [
     img: '/images/Gallery/Gallery-2.png',
     rating: 5,
     review:
-      'The bridal makeup experience at SISIRO is truly elite. From the consultation to the final touch-up, everything was handled with such precision and care.',
+      'The bridal makeup experience at Sisro\'s is truly elite. From the consultation to the final touch-up, everything was handled with such precision and care.',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const testimonialData = [
     img: '/images/Gallery/Gallery-3.png',
     rating: 5,
     review:
-      'Choosing SISIRO was the best decision for my wedding day. My makeup looked flawless from the ceremony until the reception, and I received countless compliments. The team perfectly understood my vision and made me feel confident and beautiful.',
+      'Choosing Sisro\'s was the best decision for my wedding day. My makeup looked flawless from the ceremony until the reception, and I received countless compliments. The team perfectly understood my vision and made me feel confident and beautiful.',
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const testimonialData = [
     img: '/images/Gallery/Gallery-9.png',
     rating: 5,
     review:
-      "SISIRO doesn't just teach you the basics; they prepare you for the working world as well. The practical internship gave me valuable real-world experience.",
+      "Sisro\'s doesn't just teach you the basics; they prepare you for the working world as well. The practical internship gave me valuable real-world experience.",
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ const testimonialData = [
     img: '/images/Gallery/Gallery-7.png',
     rating: 5,
     review:
-      "SISIRO's program was thorough and well-organized. The instructors made learning engaging and rewarding.",
+      "Sisro\'s program was thorough and well-organized. The instructors made learning engaging and rewarding.",
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ const testimonialData = [
     img: '/images/Gallery/Galleryy-6.png',
     rating: 5,
     review:
-      'SISIRO Academy gave me the skills and confidence to pursue my passion professionally. The mentors truly care about your growth.',
+      'Sisro\'s Academy gave me the skills and confidence to pursue my passion professionally. The mentors truly care about your growth.',
   },
 ];
 
@@ -166,7 +166,7 @@ export default function Testimonials() {
           JOIN OUR HAPPY CLIENTS
         </span>
         <h2 className="text-4xl md:text-5xl font-bold text-white mt-5">
-          Ready to Experience SISIRO?
+          Ready to Experience Sisro&apos;s?
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto mt-6 leading-8">
           Whether you&apos;re looking for flawless bridal makeup or professional beauty
@@ -225,3 +225,4 @@ function ReviewCard({ item }) {
     </div>
   );
 }
+

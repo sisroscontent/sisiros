@@ -4,22 +4,22 @@ import JsonLd from '../../components/JsonLd';
 const BASE_URL = 'https://makeupstudio-nextjs.vercel.app';
 
 export const metadata = {
-  title: 'Contact Us | SISIRO Makeup Studio',
+  title: 'Contact Us | Sisro\'s Makeup Studio',
   description:
-    'Get in touch with SISIRO Makeup Studio in Hyderabad. Book a bridal consultation, enquire about our services, or visit us at our studio.',
-  keywords: ['contact SISIRO', 'book makeup appointment Hyderabad', 'bridal makeup consultation', 'makeup studio Hyderabad contact'],
+    'Get in touch with Sisro\'s Makeup Studio in Hyderabad. Book a bridal consultation, enquire about our services, or visit us at our studio.',
+  keywords: ['contact Sisro\'s', 'book makeup appointment Hyderabad', 'bridal makeup consultation', 'makeup studio Hyderabad contact'],
   alternates: { canonical: `${BASE_URL}/contact` },
   openGraph: {
     type: 'website',
     url: `${BASE_URL}/contact`,
-    title: 'Contact Us | SISIRO Makeup Studio',
-    description: 'Get in touch with SISIRO Makeup Studio in Hyderabad. Book a bridal consultation or enquire about our services.',
-    images: [{ url: '/images/Contact-us.png', width: 1200, height: 630, alt: 'Contact SISIRO Makeup Studio — Hyderabad' }],
+    title: 'Contact Us | Sisro\'s Makeup Studio',
+    description: 'Get in touch with Sisro\'s Makeup Studio in Hyderabad. Book a bridal consultation or enquire about our services.',
+    images: [{ url: '/images/Contact-us.png', width: 1200, height: 630, alt: 'Contact Sisro\'s Makeup Studio — Hyderabad' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Us | SISIRO Makeup Studio',
-    description: 'Get in touch with SISIRO Makeup Studio in Hyderabad. Book a bridal consultation or enquire about our services.',
+    title: 'Contact Us | Sisro\'s Makeup Studio',
+    description: 'Get in touch with Sisro\'s Makeup Studio in Hyderabad. Book a bridal consultation or enquire about our services.',
     images: ['/images/Contact-us.png'],
   },
 };
@@ -27,13 +27,13 @@ export const metadata = {
 const contactSchema = {
   '@context': 'https://schema.org',
   '@type': 'ContactPage',
-  name: 'Contact SISIRO Makeup Studio',
+  name: 'Contact Sisro\'s Makeup Studio',
   url: `${BASE_URL}/contact`,
-  description: 'Get in touch with SISIRO Makeup Studio in Hyderabad. Book a bridal consultation, enquire about our services, or visit us at our studio.',
+  description: 'Get in touch with Sisro\'s Makeup Studio in Hyderabad. Book a bridal consultation, enquire about our services, or visit us at our studio.',
   image: `${BASE_URL}/images/Contact-us.png`,
   mainEntity: {
     '@type': 'BeautySalon',
-    name: 'SISIRO Makeup Studio',
+    name: 'Sisro\'s Makeup Studio',
     url: BASE_URL,
     telephone: '+91-XXXXXXXXXX',
     email: 'hello@sisiro.co',
@@ -70,3 +70,4 @@ export default function Contact() {
     </>
   );
 }
+

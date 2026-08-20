@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Sitemap | SISIRO Makeup Studio',
-  description: 'All pages on SISIRO Makeup Studio — bridal makeup, academy, gallery, testimonials, and more.',
+  title: 'Sitemap | Sisro\'s Makeup Studio',
+  description: 'All pages on Sisro\'s Makeup Studio — bridal makeup, academy, gallery, testimonials, and more.',
   alternates: {
     canonical: 'https://makeupstudio-nextjs.vercel.app/sitemap',
   },
@@ -70,3 +70,4 @@ export default function SitemapPage() {
     </main>
   );
 }
+

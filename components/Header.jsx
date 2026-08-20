@@ -31,7 +31,7 @@ export default function Header() {
             <Link href="/">
               <Image
                 src="/logo/Sisiro_logo.png"
-                alt="SISIRO Logo"
+                alt="Sisro's Logo"
                 width={280}
                 height={100}
                 priority
@@ -198,3 +198,4 @@ export default function Header() {
     </>
   );
 }
+
