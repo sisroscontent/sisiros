@@ -1,6 +1,6 @@
 import JsonLd from '../../components/JsonLd';
 
-const BASE_URL = 'https://makeupstudio-nextjs.vercel.app';
+const BASE_URL = 'https://sisros.com';
 
 export const metadata = {
   title: 'Makeup Academy in Hyderabad | Sisro\'s',

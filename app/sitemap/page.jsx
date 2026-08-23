@@ -4,7 +4,7 @@ export const metadata = {
   title: 'Sitemap | Sisro\'s Makeup Studio',
   description: 'All pages on Sisro\'s Makeup Studio — bridal makeup, academy, gallery, testimonials, and more.',
   alternates: {
-    canonical: 'https://makeupstudio-nextjs.vercel.app/sitemap',
+    canonical: 'https://sisros.com/sitemap',
   },
   robots: {
     index: true,
@@ -28,7 +28,7 @@ export default function SitemapPage() {
     <main className="min-h-screen py-20 px-6">
       <div className="max-w-2xl mx-auto">
         <h1 className="text-3xl font-bold text-[#F8F8F8] mb-2">Sitemap</h1>
-        <p className="text-[#777777] text-sm mb-10">makeupstudio-nextjs.vercel.app</p>
+        <p className="text-[#777777] text-sm mb-10">sisros.com</p>
 
         <ul className="space-y-3">
           {pages.map(({ label, href }) => (
@@ -41,7 +41,7 @@ export default function SitemapPage() {
                   {label}
                 </span>
                 <span className="text-[#555555] text-sm group-hover:text-[#D4AF37] transition-colors duration-200">
-                  makeupstudio-nextjs.vercel.app{href}
+                  sisros.com{href}
                 </span>
               </Link>
             </li>

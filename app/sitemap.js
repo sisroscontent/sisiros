@@ -3,7 +3,7 @@
  * Next.js automatically serves this as /sitemap.xml
  */
 
-const BASE_URL = 'https://makeupstudio-nextjs.vercel.app';
+const BASE_URL = 'https://sisros.com';
 const LAST_MODIFIED = '2026-08-01';
 
 export default function sitemap() {

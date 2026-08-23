@@ -1,7 +1,7 @@
 import HeroBanner from '../../components/HeroBanner';
 import JsonLd from '../../components/JsonLd';
 
-const BASE_URL = 'https://makeupstudio-nextjs.vercel.app';
+const BASE_URL = 'https://sisros.com';
 
 export const metadata = {
   title: 'About Us | Sisro\'s Makeup Studio',

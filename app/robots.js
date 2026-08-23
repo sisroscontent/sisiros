@@ -23,7 +23,7 @@ export default function robots() {
         disallow: '/',
       },
     ],
-    sitemap: 'https://makeupstudio-nextjs.vercel.app/sitemap.xml',
-    host: 'https://makeupstudio-nextjs.vercel.app',
+    sitemap: 'https://sisros.com/sitemap.xml',
+    host: 'https://sisros.com',
   };
 }

@@ -11,7 +11,7 @@ const outfit = Outfit({
   display: 'swap',
 });
 
-const BASE_URL = 'https://makeupstudio-nextjs.vercel.app';
+const BASE_URL = 'https://sisros.com';
 
 export const metadata = {
   metadataBase: new URL(BASE_URL),
@@ -91,7 +91,7 @@ export default function RootLayout({ children }) {
     '@type': 'Organization',
     name: 'Sisro\'s Makeup Studio',
     url: BASE_URL,
-    logo: `${BASE_URL}/favicon.ico`,
+    logo: `${BASE_URL}/logo/Sisiro_logo.png`,
     sameAs: [
       'https://www.instagram.com/sisiro_makeup/',
       'https://www.facebook.com/sisiromakeup/',

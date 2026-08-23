@@ -1,7 +1,7 @@
 import HomeHero from '../components/HomeHero/HomeHero';
 import JsonLd from '../components/JsonLd';
 
-const BASE_URL = 'https://makeupstudio-nextjs.vercel.app';
+const BASE_URL = 'https://sisros.com';
 
 export const metadata = {
   title: 'Sisro\'s Makeup Studio | Luxury Bridal Makeup in Hyderabad',
