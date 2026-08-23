@@ -121,17 +121,15 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-  <body className={`${outfit.className} bg-[#272626] antialiased`}>
+      <body className={`${outfit.className} bg-[#272626] antialiased`}>
         <JsonLd schema={organizationSchema} />
         <JsonLd schema={websiteSchema} />
-         <Header />
+        <Header />
 
-  <LayoutClient>
-    <main>{children}</main>
-  </LayoutClient>
-          
+        <LayoutClient>
+          <main>{children}</main>
+        </LayoutClient>
       </body>
     </html>
   );
 }
-
