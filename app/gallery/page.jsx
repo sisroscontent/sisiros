@@ -4,18 +4,18 @@ import { useState } from "react";
 import Image from "next/image";
 
 const galleryData = [
-  { id: 1, category: "Bridal", image: "/images/Gallery/Gallery-1.png" },
-  { id: 2, category: "Bridal", image: "/images/Gallery/Gallery-2.png" },
-  { id: 3, category: "Reception", image: "/images/Gallery/Gallery-3.png" },
-  { id: 4, category: "Reception", image: "/images/Gallery/Gallery-4.png" },
-  { id: 5, category: "Engagement", image: "/images/Gallery/Gallery-5.png" },
-  { id: 6, category: "Celebrity", image: "/images/Gallery/Gallery-6.png" },
-  { id: 7, category: "HD Makeup", image: "/images/Gallery/Gallery-7.png" },
-  { id: 8, category: "Bridal", image: "/images/Gallery/Gallery-8.png" },
+  { id: 1, category: "Bridal", image: "/images/Gallery/Gallery-1.webp" },
+  { id: 2, category: "Bridal", image: "/images/Gallery/Gallery-2.webp" },
+  { id: 3, category: "Reception", image: "/images/Gallery/Gallery-3.webp" },
+  { id: 4, category: "Reception", image: "/images/Gallery/Gallery-4.webp" },
+  { id: 5, category: "Engagement", image: "/images/Gallery/Gallery-5.webp" },
+  { id: 6, category: "Celebrity", image: "/images/Gallery/Gallery-6.webp" },
+  { id: 7, category: "HD Makeup", image: "/images/Gallery/Gallery-7.webp" },
+  { id: 8, category: "Bridal", image: "/images/Gallery/Gallery-8.webp" },
   // { id: 9,  category: 'Celebrity', image: '/images/Gallery/Gallery-9.png' },
-  { id: 10, category: "Bridal", image: "/images/Bridal-Image1.jpg" },
-  { id: 11, category: "Bridal", image: "/images/Bridal-Image2.jpg" },
-  { id: 12, category: "Bridal", image: "/images/Bridal-Image3.jpg" },
+  { id: 10, category: "Bridal", image: "/images/Bridal-Image1.webp" },
+  { id: 11, category: "Bridal", image: "/images/Bridal-Image2.webp" },
+  { id: 12, category: "Bridal", image: "/images/Bridal-Image3.webp" },
 ];
 
 const categories = [
@@ -81,6 +81,7 @@ export default function Gallery() {
                   alt={item.category}
                   width={400}
                   height={500}
+                  loading="lazy"
                   className={`w-full h-full object-cover transition-opacity duration-500 ${
                     loadedImages[item.image] ? "opacity-100" : "opacity-0"
                   }`}

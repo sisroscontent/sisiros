@@ -7,7 +7,7 @@ const coursesData = [
   {
     id: 1001,
     category: 'personal',
-    image: '/images/Course/Coursee-1.jpeg',
+    image: '/images/Course/Coursee-1.webp',
     title: 'Self Grooming',
     location: 'Madhapur / Hyderabad',
     url: 'https://sisiro.co/makeup-course-in-madhapur/',
@@ -17,7 +17,7 @@ const coursesData = [
   {
     id: 3222,
     category: 'hair',
-    image: '/images/Course/Coursee-2.jpeg',
+    image: '/images/Course/Coursee-2.webp',
     title: 'Corporate Grooming',
     location: 'Madhapur',
     url: 'https://sisiro.co/basic-hair-course-in-madhapur/',
@@ -27,7 +27,7 @@ const coursesData = [
   {
     id: 3224,
     category: 'hair',
-    image: '/images/Course/Course-3.jpeg',
+    image: '/images/Course/Course-3.webp',
     title: 'Makeup Training',
     location: 'Hyderabad',
     url: 'https://sisiro.co/advanced-hair-course-in-hyderabad/',
@@ -75,6 +75,7 @@ export default function Academy() {
                   src={course.image}
                   alt={course.title}
                   fill
+                  loading="lazy"
                   className={`object-cover transition-opacity duration-500 ${
                     loadedImages[course.id] ? 'opacity-100' : 'opacity-0'
                   }`}

@@ -9,9 +9,9 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 
 const images = [
-  { src: '/images/Gallery/Gallery-2.png', alt: 'Gallery slide 1' },
-  { src: '/images/Hero-Home-mkup.png', alt: 'Hero slide 2' },
-  { src: '/images/Makeup-room.jpeg', alt: 'Makeup room slide 3' },
+  { src: '/images/Gallery/Gallery-2.webp', alt: 'Gallery slide 1' },
+  { src: '/images/Hero-Home-mkup.webp', alt: 'Hero slide 2' },
+  { src: '/images/Makeup-room.webp', alt: 'Makeup room slide 3' },
 ];
 
 export default function HeroCarousel() {

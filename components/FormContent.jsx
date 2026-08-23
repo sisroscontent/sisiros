@@ -17,7 +17,7 @@ export default function FormContent() {
   const submitBooking = async (data) => {
     try {
       await fetch(
-        'https://connect.pabbly.com/webhook-listener/webhook/IjU3NjMwNTZjMDYzMjA0MzE1MjZhNTUzMCI_3D_pc/IjU3NjcwNTY5MDYzZTA0M2Q1MjZjNTUzMTUxMzYi_pc',
+       '/api/booking',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -50,7 +50,7 @@ export default function FormContent() {
 
   const submitAcademy = async (data) => {
     try {
-      await fetch('YOUR_ACADEMY_PABBLY_WEBHOOK_URL', {
+      await fetch('/api/academy', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

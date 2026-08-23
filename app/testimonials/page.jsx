@@ -10,7 +10,7 @@ const testimonialData = [
     category: 'Bridal',
     name: 'Ananya Reddy',
     role: 'Bride • December 2025',
-    img: '/images/Gallery/Gallery-1.png',
+    img: '/images/Gallery/Gallery-1.webp',
     rating: 5,
     review:
       'Sisro\'s made my wedding day absolutely magical. The bridal makeup was flawless — every photograph looks like a dream. Dr. Preethi understood exactly what I wanted and exceeded my expectations.',
@@ -20,7 +20,7 @@ const testimonialData = [
     category: 'Bridal',
     name: 'Priyanka Sen',
     role: 'Bride & Creative Director',
-    img: '/images/Gallery/Gallery-2.png',
+    img: '/images/Gallery/Gallery-2.webp',
     rating: 5,
     review:
       'The bridal makeup experience at Sisro\'s is truly elite. From the consultation to the final touch-up, everything was handled with such precision and care.',
@@ -30,7 +30,7 @@ const testimonialData = [
     category: 'Academy',
     name: 'Ramya Rao',
     role: 'Bride',
-    img: '/images/Gallery/Gallery-3.png',
+    img: '/images/Gallery/Gallery-3.webp',
     rating: 5,
     review:
       'Choosing Sisro\'s was the best decision for my wedding day. My makeup looked flawless from the ceremony until the reception, and I received countless compliments. The team perfectly understood my vision and made me feel confident and beautiful.',
@@ -40,7 +40,7 @@ const testimonialData = [
     category: 'Academy',
     name: 'Subhashini',
     role: 'Student',
-    img: '/images/Gallery/Gallery-9.png',
+    img: '/images/Gallery/Gallery-9.webp',
     rating: 5,
     review:
       "Sisro\'s doesn't just teach you the basics; they prepare you for the working world as well. The practical internship gave me valuable real-world experience.",
@@ -50,7 +50,7 @@ const testimonialData = [
     category: 'Academy',
     name: 'Rakhee Mishra',
     role: 'Student',
-    img: '/images/Gallery/Gallery-7.png',
+    img: '/images/Gallery/Gallery-7.webp',
     rating: 5,
     review:
       "Sisro\'s program was thorough and well-organized. The instructors made learning engaging and rewarding.",
@@ -98,6 +98,7 @@ export default function Testimonials() {
                 src={hoveredItem.img}
                 alt={hoveredItem.name}
                 fill
+                loading="lazy"
                 className={`object-cover transition-opacity duration-500 ${
                   loadedImages[`hover-${hoveredItem.id}`] ? 'opacity-100' : 'opacity-0'
                 }`}
@@ -147,6 +148,7 @@ export default function Testimonials() {
                 src={item.img}
                 alt={item.name}
                 fill
+                loading="lazy"
                 className={`object-cover transition-opacity duration-500 ${
                   loadedImages[item.id] ? 'opacity-100' : 'opacity-0'
                 }`}
@@ -199,6 +201,7 @@ function ImageCard({ item, onHover, loadedImages, setLoadedImages }) {
           src={item.img}
           alt={item.name}
           fill
+          loading="lazy"
           className={`object-cover transition-all duration-500 hover:scale-105 ${
             loadedImages[item.id] ? 'opacity-100' : 'opacity-0'
           }`}
