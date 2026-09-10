@@ -73,7 +73,7 @@ export default function OGImage() {
         {/* Studio name */}
         <p
           style={{
-            color: '#D4AF37',
+            color: '#2B2522',
             fontSize: '18px',
             letterSpacing: '8px',
             textTransform: 'uppercase',
@@ -125,4 +125,3 @@ export default function OGImage() {
     { ...size }
   );
 }
-

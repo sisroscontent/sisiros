@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <>
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-[#111111] border-b border-[#2d2d2d]">
+      <header className="sticky top-0 z-50 bg-[#20283B] border-b border-[#30384B]">
         <div className="max-w-7xl mx-auto h-20 px-4 lg:px-8 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
@@ -48,8 +48,8 @@ export default function Header() {
                 href={item.path}
                 className={`uppercase text-[15px] font-semibold tracking-wide transition duration-300 ${
                   pathname === item.path
-                    ? "text-[#D4AF37]"
-                    : "text-white hover:text-[#D4AF37]"
+                    ? "text-[#F3E9D2]"
+                    : "text-[#F3E9D2] hover:text-[#F3E9D2]"
                 }`}
               >
                 {item.name}
@@ -61,7 +61,7 @@ export default function Header() {
           <div className="hidden lg:block">
             {/* <Link
               href="/form"
-              className="px-6 py-3 border border-[#D4AF37] rounded-md text-[#D4AF37] uppercase text-sm font-semibold tracking-wider hover:bg-[#D4AF37] hover:text-black transition duration-300"
+              className="px-6 py-3 border border-[#D4AF37] rounded-md text-[#2B2522] uppercase text-sm font-semibold tracking-wider hover:bg-[#D4AF37] hover:text-black transition duration-300"
             >
               Enquire
             </Link> */}
@@ -70,7 +70,7 @@ export default function Header() {
           {/* Mobile Hamburger */}
           <button
             onClick={() => setMenuOpen(true)}
-            className="lg:hidden text-white"
+            className="lg:hidden text-[#F5F1EA]"
             aria-label="Open menu"
           >
             <HiOutlineBars3 size={30} />
@@ -97,7 +97,7 @@ export default function Header() {
           <button onClick={() => setMenuOpen(false)} aria-label="Close menu">
             <HiOutlineXMark
               size={30}
-              className="text-white hover:text-[#D4AF37]"
+              className="text-[#F5F1EA] hover:text-[#2B2522]"
             />
           </button>
         </div>
@@ -111,8 +111,8 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
               className={`px-6 py-4 uppercase transition ${
                 pathname === item.path
-                  ? "text-[#D4AF37]"
-                  : "text-white hover:text-[#D4AF37]"
+                  ? "text-[#F3E9D2]"
+                  : "text-[#F3E9D2] hover:text-[#F3E9D2]"
               }`}
             >
               {item.name}
@@ -125,7 +125,7 @@ export default function Header() {
           <Link
             href="/form"
             onClick={() => setMenuOpen(false)}
-            className="block w-full text-center border border-[#D4AF37] rounded-md py-3 text-[#D4AF37] uppercase font-semibold hover:bg-[#D4AF37] hover:text-black transition"
+            className="block w-full text-center border border-[#D4AF37] rounded-md py-3 text-[#2B2522] uppercase font-semibold hover:bg-[#D4AF37] hover:text-black transition"
           >
             Book Appointment
           </Link>
@@ -198,4 +198,3 @@ export default function Header() {
     </>
   );
 }
-

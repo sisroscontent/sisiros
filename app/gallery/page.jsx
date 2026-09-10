@@ -56,10 +56,10 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <p className="uppercase tracking-[4px] text-[#D4AF37] text-sm font-semibold mb-3">
+          <p className="uppercase tracking-[4px] text-[#2B2522] text-sm font-semibold mb-3">
             OUR GALLERY
           </p>
-          <h1 className="text-4xl lg:text-4xl font-bold text-[#F8F8F8] leading-tight">
+          <h1 className="text-4xl lg:text-4xl font-bold text-[#2B2522] leading-tight">
             Snapshot Of Our Work
           </h1>
         </div>
@@ -102,7 +102,7 @@ export default function Gallery() {
           <button
             onClick={() => setCurrentPage((prev) => prev - 1)}
             disabled={currentPage === 1}
-            className="px-4 py-2 rounded border border-[#D4AF37] text-[#D4AF37] disabled:opacity-50"
+            className="px-4 py-2 rounded border border-[#D4AF37] text-[#2B2522] disabled:opacity-50"
           >
             Previous
           </button>
@@ -114,7 +114,7 @@ export default function Gallery() {
               className={`w-10 h-10 rounded ${
                 currentPage === index + 1
                   ? "bg-[#D4AF37] text-black"
-                  : "bg-[#2E2E2E] text-white"
+                  : "bg-[#2E2E2E] text-[#E8E1D8]"
               }`}
             >
               {index + 1}
@@ -124,7 +124,7 @@ export default function Gallery() {
           <button
             onClick={() => setCurrentPage((prev) => prev + 1)}
             disabled={currentPage === totalPages}
-            className="px-4 py-2 rounded border border-[#D4AF37] text-[#D4AF37] disabled:opacity-50"
+            className="px-4 py-2 rounded border border-[#D4AF37] text-[#2B2522] disabled:opacity-50"
           >
             Next
           </button>

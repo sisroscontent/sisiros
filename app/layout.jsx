@@ -3,6 +3,7 @@ import './globals.css';
 import Header from '../components/Header';
 import JsonLd from '../components/JsonLd';
 import LayoutClient from "../components/LayoutClient";
+import ScrollPageNavigation from "../components/ScrollPageNavigation";
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -121,9 +122,11 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={`${outfit.className} bg-[#272626] antialiased`}>
+      <body className={`${outfit.className} bg-[#B48A66] antialiased`}>
         <JsonLd schema={organizationSchema} />
         <JsonLd schema={websiteSchema} />
+          <ScrollPageNavigation />
+
         <Header />
 
         <LayoutClient>

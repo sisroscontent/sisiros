@@ -25,15 +25,15 @@ export default function HeroBanner({
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
         <div className="max-w-2xl">
-          <p className="text-[#D4AF37] uppercase tracking-[4px] text-sm mb-5">
+          <p className="text-[#2B2522] uppercase tracking-[4px] text-sm mb-5">
             {subtitle}
           </p>
 
-          <h1 className="text-white text-5xl lg:text-7xl font-bold leading-tight">
+          <h1 className="text-[#2B2522] text-5xl lg:text-7xl font-bold leading-tight">
             {title}
           </h1>
 
-          <p className="text-gray-300 text-lg mt-6 leading-8">{description}</p>
+          <p className="text-[#E8E1D8] text-lg mt-6 leading-8">{description}</p>
 
           <Link
             href="/form"

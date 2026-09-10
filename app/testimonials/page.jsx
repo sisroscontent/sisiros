@@ -75,10 +75,10 @@ export default function Testimonials() {
     <section className="py-16 px-6 lg:px-20">
       {/* Heading */}
       <div className="text-center max-w-3xl mx-auto">
-        <span className="uppercase tracking-[4px] text-[#D4AF37] text-sm font-semibold">
+        <span className="uppercase tracking-[4px] text-[#2B2522] text-sm font-semibold">
           OUR TESTIMONIALS
         </span>
-        <h2 className="text-4xl lg:text-4xl font-bold text-[#F8F8F8] mt-4">
+        <h2 className="text-4xl lg:text-4xl font-bold text-[#2B2522] mt-4">
           Stories That Inspire Confidence
         </h2>
       </div>
@@ -164,13 +164,13 @@ export default function Testimonials() {
 
       {/* Bottom CTA */}
       {/* <div className="mt-24 bg-[#111111] rounded-3xl px-8 py-16 text-center">
-        <span className="uppercase tracking-[4px] text-[#D4AF37] text-sm font-semibold">
+        <span className="uppercase tracking-[4px] text-[#2B2522] text-sm font-semibold">
           JOIN OUR HAPPY CLIENTS
         </span>
-        <h2 className="text-4xl md:text-5xl font-bold text-white mt-5">
+        <h2 className="text-4xl md:text-5xl font-bold text-[#2B2522] mt-5">
           Ready to Experience Sisro&apos;s?
         </h2>
-        <p className="text-gray-300 max-w-2xl mx-auto mt-6 leading-8">
+        <p className="text-[#E8E1D8] max-w-2xl mx-auto mt-6 leading-8">
           Whether you&apos;re looking for flawless bridal makeup or professional beauty
           training, our team is here to make your journey unforgettable.
         </p>
@@ -178,7 +178,7 @@ export default function Testimonials() {
           <button className="bg-[#D4AF37] text-black px-8 py-3 rounded-full font-semibold hover:bg-[#c49f2f] transition">
             Book Appointment
           </button>
-          <button className="border border-[#D4AF37] text-[#D4AF37] px-8 py-3 rounded-full font-semibold hover:bg-[#D4AF37] hover:text-black transition">
+          <button className="border border-[#D4AF37] text-[#2B2522] px-8 py-3 rounded-full font-semibold hover:bg-[#D4AF37] hover:text-black transition">
             Explore Academy
           </button>
         </div>
@@ -222,10 +222,9 @@ function ReviewCard({ item }) {
           <Star key={i} size={20} className="fill-[#D4AF37] text-[#D4AF37]" />
         ))}
       </div>
-      <h2 className="text-3xl font-bold text-white">{item.name}</h2>
-      <p className="text-[#D4AF37] md:mt-2">{item.role}</p>
-      <p className="text-gray-300 italic md:mt-8 leading-8">&quot;{item.review}&quot;</p>
+      <h2 className="text-3xl font-bold text-[#2B2522]">{item.name}</h2>
+      <p className="text-[#2B2522] md:mt-2">{item.role}</p>
+      <p className="text-[#E8E1D8] italic md:mt-8 leading-8">&quot;{item.review}&quot;</p>
     </div>
   );
 }
-

@@ -23,7 +23,7 @@ export default function EnquiryModal({ isOpen, onClose }) {
       >
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 sm:top-4 sm:right-4 text-2xl sm:text-3xl text-white z-10"
+          className="absolute top-3 right-3 sm:top-4 sm:right-4 text-2xl sm:text-3xl text-[#E8E1D8] z-10"
         >
           ✕
         </button>

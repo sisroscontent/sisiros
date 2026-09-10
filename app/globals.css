@@ -4,6 +4,18 @@
 
 body {
   font-family: 'Outfit', sans-serif;
+  color: #E8E1D8;
+}
+
+input,
+textarea,
+select {
+  color: #E8E1D8 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #E8E1D8 !important;
 }
 
 @keyframes float {

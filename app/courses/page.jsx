@@ -51,10 +51,10 @@ export default function Academy() {
 
         {/* Header Section */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <p className="uppercase tracking-[4px] text-[#D4AF37] text-sm font-semibold mb-3">
+          <p className="uppercase tracking-[4px] text-[#2B2522] text-sm font-semibold mb-3">
             Sisro&apos;s ACADEMY
           </p>
-          <h1 className="text-4xl sm:text-4xl font-bold text-[#F8F8F8] leading-tight">
+          <h1 className="text-4xl sm:text-4xl font-bold text-[#2B2522] leading-tight">
             Courses offered
           </h1>
         </div>
@@ -87,7 +87,7 @@ export default function Academy() {
 
               {/* Content */}
               <div className="p-1 text-center bg-[#e2e1da]">
-                <h3 className="text-2xl font-bold text-black leading-tight h-[80px] flex items-center justify-center text-center group-hover:text-[#D4AF37] transition">
+                <h3 className="text-2xl font-bold text-[#2B2522] leading-tight h-[80px] flex items-center justify-center text-center group-hover:text-[#2B2522] transition">
                   {course.title}
                 </h3>
               </div>
@@ -97,7 +97,7 @@ export default function Academy() {
 
         {/* Highlight Banner */}
         {/* <div className="mt-20 bg-[#111111] rounded-3xl px-8 py-10 text-center shadow-xl">
-          <span className="uppercase tracking-[4px] text-[#D4AF37] text-sm font-semibold">
+          <span className="uppercase tracking-[4px] text-[#2B2522] text-sm font-semibold">
             Sisro&apos;s ACADEMY
           </span>
           <p className="text-gray-300 max-w-3xl mx-auto mt-6 leading-8">
@@ -111,4 +111,3 @@ export default function Academy() {
     </div>
   );
 }
-

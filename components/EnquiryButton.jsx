@@ -58,7 +58,7 @@ export default function EnquiryButton({ onClick }) {
 
 </div>
 
-      <span className="text-xs tracking-[2px] font-semibold">
+      <span className="text-[#2B2522] text-xs tracking-[2px] font-semibold">
         ENQUIRE
       </span>
     </button>

@@ -73,7 +73,7 @@ export default function FormContent() {
 
   // ── Shared input classes ─────────────────────────────────────────────────
   const inputCls =
-    'w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none';
+    'w-full bg-[#242424] border border-[#444] text-[#E8E1D8] placeholder:text-[#E8E1D8] rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none';
 
   return (
       <div className="max-w-5xl mx-auto mt-20">    <div className="max-w-5xl mx-auto mt-20">
@@ -86,8 +86,8 @@ export default function FormContent() {
                 className={`px-10 py-4 rounded-t-xl border transition-all duration-300
       ${
         activeTab === "makeup"
-          ? "bg-[#1A1A1A] border-[#D4AF37] border-b-[#1A1A1A] text-[#D4AF37]"
-          : "bg-[#242424] border-[#444] text-gray-400 hover:text-[#D4AF37]"
+          ? "bg-[#1A1A1A] border-[#D4AF37] border-b-[#1A1A1A] text-[#2B2522]"
+          : "bg-[#242424] border-[#444] text-[#E8E1D8] hover:text-[#2B2522]"
       }`}
               >
                 Makeup Form
@@ -98,8 +98,8 @@ export default function FormContent() {
                 className={`ml-2 px-10 py-4 rounded-t-xl border transition-all duration-300
       ${
         activeTab === "course"
-          ? "bg-[#1A1A1A] border-[#D4AF37] border-b-[#1A1A1A] text-[#D4AF37]"
-          : "bg-[#242424] border-[#444] text-gray-400 hover:text-[#D4AF37]"
+          ? "bg-[#1A1A1A] border-[#D4AF37] border-b-[#1A1A1A] text-[#2B2522]"
+          : "bg-[#242424] border-[#444] text-[#E8E1D8] hover:text-[#2B2522]"
       }`}
               >
                 Course Form
