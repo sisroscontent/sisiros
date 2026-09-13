@@ -110,9 +110,7 @@ export default function HomeHero() {
             className="
               min-h-[400px]
               lg:min-h-[580px]
-              border-[4px]
-              border-[#464444]
-              rounded-[5px]
+            
               p-6
               md:p-8
               lg:p-10

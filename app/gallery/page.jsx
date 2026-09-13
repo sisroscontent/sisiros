@@ -27,11 +27,9 @@ const categories = [
   "Celebrity",
 ];
 
-const IMAGES_PER_PAGE = 9;
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState("All");
-  const [currentPage, setCurrentPage] = useState(1);
   const [loadedImages, setLoadedImages] = useState({});
 
   const filtered =
@@ -39,17 +37,11 @@ export default function Gallery() {
       ? galleryData
       : galleryData.filter((item) => item.category === activeCategory);
 
-  const totalPages = Math.ceil(filtered.length / IMAGES_PER_PAGE);
-  const startIndex = (currentPage - 1) * IMAGES_PER_PAGE;
-  const currentImages = filtered.slice(
-    startIndex,
-    startIndex + IMAGES_PER_PAGE,
-  );
+const currentImages = filtered;
 
   const handleCategoryChange = (category) => {
-    setActiveCategory(category);
-    setCurrentPage(1);
-  };
+  setActiveCategory(category);
+};
 
   return (
     <div className="min-h-screen py-16">
@@ -97,38 +89,7 @@ export default function Gallery() {
           ))}
         </div>
 
-        {/* Pagination */}
-        <div className="flex justify-center items-center gap-2 mt-10">
-          <button
-            onClick={() => setCurrentPage((prev) => prev - 1)}
-            disabled={currentPage === 1}
-            className="px-4 py-2 rounded border border-[#D4AF37] text-[#2B2522] disabled:opacity-50"
-          >
-            Previous
-          </button>
-
-          {[...Array(totalPages)].map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentPage(index + 1)}
-              className={`w-10 h-10 rounded ${
-                currentPage === index + 1
-                  ? "bg-[#D4AF37] text-black"
-                  : "bg-[#2E2E2E] text-[#E8E1D8]"
-              }`}
-            >
-              {index + 1}
-            </button>
-          ))}
-
-          <button
-            onClick={() => setCurrentPage((prev) => prev + 1)}
-            disabled={currentPage === totalPages}
-            className="px-4 py-2 rounded border border-[#D4AF37] text-[#2B2522] disabled:opacity-50"
-          >
-            Next
-          </button>
-        </div>
+        
       </div>
     </div>
   );

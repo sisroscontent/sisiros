@@ -33,9 +33,9 @@ export default function Header() {
                 src="/logo/Sisiro_logo.png"
                 alt="Sisro's Logo"
                 width={280}
-                height={100}
+                height={120}
                 priority
-                className="h-[64px] w-auto object-contain"
+                className="h-[68px] w-auto object-contain"
               />
             </Link>
           </div>
@@ -46,10 +46,10 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.path}
-                className={`uppercase text-[15px] font-semibold tracking-wide transition duration-300 ${
+                className={`uppercase text-[16px] font-semibold tracking-wide transition duration-300 ${
                   pathname === item.path
-                    ? "text-[#B48A66]"
-                    : "text-[#B48A66] hover:text-[#B48A66]"
+                    ? "text-white"
+                    : "text-[#B48A66] hover:text-white"
                 }`}
               >
                 {item.name}
