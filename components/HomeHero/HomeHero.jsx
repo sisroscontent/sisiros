@@ -4,11 +4,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 
+import HeroContent from './HeroContent';
+import HeroCarousel from './HeroCarousel';
+
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 
-const images = [
+const heroImages = [
   {
     src: '/images/Hero/sisro-heroImage.png',
     tabletSrc: '/images/Hero/Gallery-2-tablet.webp',
@@ -31,8 +34,12 @@ const images = [
 
 export default function HomeHero() {
   return (
-    <section className="w-full h-[calc(100vh-88px)] flex justify-center overflow-hidden ">
-      <div className="w-[100%] h-full">
+    <main className="w-full">
+
+      {/* =========================================
+          1. FULL WIDTH HERO / SWIPER BANNER
+          ========================================= */}
+      <section className="w-full h-[calc(100vh-88px)] overflow-hidden">
         <Swiper
           modules={[Autoplay, EffectFade, Pagination]}
           slidesPerView={1}
@@ -48,26 +55,95 @@ export default function HomeHero() {
           }}
           className="w-full h-full hero-swiper"
         >
-          {images.map((image, index) => (
+          {heroImages.map((image, index) => (
             <SwiperSlide key={index}>
               <div className="relative w-full h-full">
+
                 <picture>
-                  <source media="(max-width: 767px)" srcSet={image.mobileSrc} />
-                  <source media="(max-width: 1199px)" srcSet={image.tabletSrc} />
+                  <source
+                    media="(max-width: 767px)"
+                    srcSet={image.mobileSrc}
+                  />
+
+                  <source
+                    media="(max-width: 1199px)"
+                    srcSet={image.tabletSrc}
+                  />
+
                   <Image
                     src={image.src}
                     alt={image.alt}
                     fill
                     priority={index === 0}
-                    sizes="80vw"
+                    sizes="100vw"
                     className="object-cover"
                   />
                 </picture>
+
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
-    </section>
+      </section>
+
+
+      {/* =========================================
+          2. HERO CONTENT + HERO CAROUSEL
+          ========================================= */}
+      <section className="w-full px-5 md:px-8 lg:px-14 py-10 md:py-14">
+
+        <div
+          className="
+            max-w-[1400px]
+            mx-auto
+            grid
+            grid-cols-1
+            lg:grid-cols-2
+            gap-8
+            lg:gap-12
+            items-stretch
+          "
+        >
+
+          {/* HERO CONTENT */}
+          <div
+            className="
+              min-h-[400px]
+              lg:min-h-[580px]
+              border-[4px]
+              border-[#464444]
+              rounded-[5px]
+              p-6
+              md:p-8
+              lg:p-10
+              overflow-hidden
+            "
+          >
+            <HeroContent />
+          </div>
+
+
+          {/* HERO CAROUSEL */}
+          <div
+            className="
+              min-h-[400px]
+              lg:min-h-[580px]
+              border-[4px]
+              border-[#464444]
+              rounded-[5px]
+              overflow-hidden
+              flex
+              items-center
+              justify-center
+            "
+          >
+            <HeroCarousel />
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
   );
 }

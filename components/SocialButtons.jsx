@@ -2,8 +2,8 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 
 export default function SocialButtons() {
   return (
-    <div className="flex flex-col gap-3">
-
+    <div className="flex items-center gap-2">
+      
       {/* Instagram */}
       <a
         href="https://www.instagram.com/sisiros_hyd?igsh=dmVvbmF1bTJsMnVm"
@@ -11,25 +11,18 @@ export default function SocialButtons() {
         rel="noopener noreferrer"
         aria-label="Instagram"
         className="
-          w-24
-          h-16
-          rounded-2xl
-          bg-[#1A1A1A]
-          border-2
-          border-[#D4AF37]
+          w-12
+          h-12
           flex
           items-center
           justify-center
-          text-[#D4AF37]
-          shadow-[0_0_18px_rgba(212,175,55,.20)]
+          text-[#F5F1EA]
           hover:scale-105
-          hover:bg-[#D4AF37]
-          hover:text-black
           transition-all
           duration-300
         "
       >
-        <FaInstagram size={28} />
+        <FaInstagram size={40} />
       </a>
 
       {/* Facebook */}
@@ -39,25 +32,20 @@ export default function SocialButtons() {
         rel="noopener noreferrer"
         aria-label="Facebook"
         className="
-          w-24
-          h-16
-          rounded-2xl
-          bg-[#1A1A1A]
-          border-2
-          border-[#D4AF37]
+          w-12
+          h-12
+          rounded-lg
+          bg-[#D7EAEA]
+          text-[#B48A66]
           flex
           items-center
           justify-center
-          text-[#D4AF37]
-          shadow-[0_0_18px_rgba(212,175,55,.20)]
           hover:scale-105
-          hover:bg-[#D4AF37]
-          hover:text-black
           transition-all
           duration-300
         "
       >
-        <FaFacebookF size={26} />
+        <FaFacebookF size={31} />
       </a>
 
     </div>

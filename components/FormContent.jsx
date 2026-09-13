@@ -73,7 +73,7 @@ export default function FormContent() {
 
   // ── Shared input classes ─────────────────────────────────────────────────
   const inputCls =
-    'w-full bg-[#242424] border border-[#444] text-[#E8E1D8] placeholder:text-[#E8E1D8] rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none';
+    'w-full bg-[#242424] border border-[#444] text-[#E8E1D8] placeholder:text-[#E8E1D8] rounded-lg px-4 py-3 focus:border-[#B48A66]  focus:outline-none';
 
   return (
       <div className="max-w-5xl mx-auto mt-20">    <div className="max-w-5xl mx-auto mt-20">
@@ -86,8 +86,8 @@ export default function FormContent() {
                 className={`px-10 py-4 rounded-t-xl border transition-all duration-300
       ${
         activeTab === "makeup"
-          ? "bg-[#1A1A1A] border-[#D4AF37] border-b-[#1A1A1A] text-[#2B2522]"
-          : "bg-[#242424] border-[#444] text-[#E8E1D8] hover:text-[#2B2522]"
+          ? "bg-[#B48A66] border-[#B48A66]  border-b-[#1A1A1A] text-white"
+          : "bg-[#242424] border-[#B48A66]  text-[#E8E1D8] hover:text-[#B48A66]"
       }`}
               >
                 Makeup Form
@@ -98,8 +98,8 @@ export default function FormContent() {
                 className={`ml-2 px-10 py-4 rounded-t-xl border transition-all duration-300
       ${
         activeTab === "course"
-          ? "bg-[#1A1A1A] border-[#D4AF37] border-b-[#1A1A1A] text-[#2B2522]"
-          : "bg-[#242424] border-[#444] text-[#E8E1D8] hover:text-[#2B2522]"
+          ? "bg-[#B48A66]  border-[#B48A66]  border-b-[#1A1A1A] text-white"
+          : "bg-[#20283B]  border-[#B48A66] text-white hover:text-[#B48A66]"
       }`}
               >
                 Course Form
@@ -108,7 +108,7 @@ export default function FormContent() {
           </div>
 
           {/* Form Container */}
-          <div className="-mt-[1px] bg-[#1A1A1A] border border-[#D4AF37] rounded-b-xl rounded-tr-xl p-8">
+          <div className="-mt-[1px] bg-[#20283B] border border-[#B48A66] rounded-b-xl rounded-tr-xl p-8">
             {activeTab === "makeup" ? (
               <form
                 onSubmit={handleSubmit(submitBooking)}
@@ -129,7 +129,7 @@ export default function FormContent() {
                         message: "Minimum 3 characters",
                       },
                     })}
-                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
+                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#B48A66] focus:outline-none"
                   />
 
                   {errors.fullName && (
@@ -151,7 +151,7 @@ export default function FormContent() {
                         message: "Enter valid phone number",
                       },
                     })}
-                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
+                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#B48A66] focus:outline-none"
                   />
 
                   {errors.phone && (
@@ -173,7 +173,7 @@ export default function FormContent() {
                         message: "Invalid email",
                       },
                     })}
-                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
+                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#B48A66] focus:outline-none"
                   />
 
                   {errors.email && (
@@ -187,7 +187,7 @@ export default function FormContent() {
                     {...register("eventType", {
                       required: "Please select event",
                     })}
-                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
+                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#B48A66] focus:outline-none"
                   >
                     <option value="">Select Event</option>
 
@@ -210,7 +210,7 @@ export default function FormContent() {
                     {...register("eventDate", {
                       required: "Select event date",
                     })}
-                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
+                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#B48A66] focus:outline-none"
                   />
 
                   {errors.eventDate && (
@@ -226,7 +226,7 @@ export default function FormContent() {
                     {...register("location", {
                       required: "Location is required",
                     })}
-                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
+                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#B48A66] focus:outline-none"
                   />
 
                   {errors.location && (
@@ -244,7 +244,7 @@ export default function FormContent() {
                       message: "Maximum 500 characters allowed",
                     },
                   })}
-                  className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 md:col-span-2 focus:border-[#D4AF37] focus:outline-none"
+                  className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 md:col-span-2 focus:border-[#B48A66] focus:outline-none"
                 />
 
                 {errors.message && (
@@ -253,7 +253,7 @@ export default function FormContent() {
                   </p>
                 )}
 
-                <button className="bg-[#D4AF37] hover:bg-yellow-400 text-black font-semibold py-3 rounded-lg md:col-span-2 transition">
+                <button className="bg-[#B48A66]  hover:bg-yellow-400 text-black font-semibold py-3 rounded-lg md:col-span-2 transition">
                   Book Now
                 </button>
               </form>
@@ -277,7 +277,7 @@ export default function FormContent() {
                         message: "Minimum 3 characters",
                       },
                     })}
-                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
+                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#B48A66] focus:outline-none"
                   />
 
                   {academyErrors.fullName && (
@@ -298,7 +298,7 @@ export default function FormContent() {
                         message: "Enter valid phone number",
                       },
                     })}
-                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
+                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#B48A66] focus:outline-none"
                   />
 
                   {academyErrors.phone && (
@@ -319,7 +319,7 @@ export default function FormContent() {
                         message: "Invalid email",
                       },
                     })}
-                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
+                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#B48A66]  focus:outline-none"
                   />
 
                   {academyErrors.email && (
@@ -336,7 +336,7 @@ export default function FormContent() {
                     {...academyRegister("qualification", {
                       required: "Qualification is required",
                     })}
-                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
+                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#B48A66]  focus:outline-none"
                   />
 
                   {academyErrors.qualification && (
@@ -351,7 +351,7 @@ export default function FormContent() {
                     {...academyRegister("course", {
                       required: "Please select a course",
                     })}
-                    className="w-full bg-[#242424] border border-[#444] text-white rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
+                    className="w-full bg-[#242424] border border-[#444] text-white rounded-lg px-4 py-3 focus:border-[#B48A66]  focus:outline-none"
                   >
                     <option value="">Select Course</option>
                     <option>Basic Makeup</option>
@@ -372,7 +372,7 @@ export default function FormContent() {
                     {...academyRegister("batch", {
                       required: "Please select a batch",
                     })}
-                    className="w-full bg-[#242424] border border-[#444] text-white rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
+                    className="w-full bg-[#242424] border border-[#444] text-white rounded-lg px-4 py-3 focus:border-[#B48A66]  focus:outline-none"
                   >
                     <option value="">Preferred Batch</option>
                     <option>Morning</option>
@@ -397,7 +397,7 @@ export default function FormContent() {
                         message: "Maximum 500 characters allowed",
                       },
                     })}
-                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
+                    className="w-full bg-[#242424] border border-[#444] text-white placeholder:text-gray-500 rounded-lg px-4 py-3 focus:border-[#B48A66]  focus:outline-none"
                   />
 
                   {academyErrors.message && (
@@ -407,7 +407,7 @@ export default function FormContent() {
                   )}
                 </div>
 
-                <button className="bg-[#D4AF37] hover:bg-yellow-400 text-black font-semibold py-3 rounded-lg md:col-span-2 transition">
+                <button className="bg-[#B48A66]  hover:bg-yellow-400 text-black font-semibold py-3 rounded-lg md:col-span-2 transition">
                   Enroll Now
                 </button>
               </form>

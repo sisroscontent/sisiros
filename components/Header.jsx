@@ -48,8 +48,8 @@ export default function Header() {
                 href={item.path}
                 className={`uppercase text-[15px] font-semibold tracking-wide transition duration-300 ${
                   pathname === item.path
-                    ? "text-[#F3E9D2]"
-                    : "text-[#F3E9D2] hover:text-[#F3E9D2]"
+                    ? "text-[#B48A66]"
+                    : "text-[#B48A66] hover:text-[#B48A66]"
                 }`}
               >
                 {item.name}
@@ -111,8 +111,8 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
               className={`px-6 py-4 uppercase transition ${
                 pathname === item.path
-                  ? "text-[#F3E9D2]"
-                  : "text-[#F3E9D2] hover:text-[#F3E9D2]"
+                  ? "text-[#B48A66]"
+                  : "text-[#B48A66] hover:text-[#B48A66]"
               }`}
             >
               {item.name}
@@ -120,80 +120,8 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Mobile Book Appointment */}
-        <div className="p-6">
-          <Link
-            href="/form"
-            onClick={() => setMenuOpen(false)}
-            className="block w-full text-center border border-[#D4AF37] rounded-md py-3 text-[#2B2522] uppercase font-semibold hover:bg-[#D4AF37] hover:text-black transition"
-          >
-            Book Appointment
-          </Link>
-        </div>
-        <div className="px-10 mt-2">
-
-          <div className="flex items-center justify-between">
-
-            {/* Instagram */}
-            <a
-              href="https://www.instagram.com/sisiros_hyd?igsh=dmVvbmF1bTJsMnVm"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="
-                w-20
-                h-14
-                rounded-2xl
-                bg-[#1A1A1A]
-                border-2
-                border-[#D4AF37]
-                flex
-                items-center
-                justify-center
-                text-[#D4AF37]
-                shadow-[0_0_18px_rgba(212,175,55,.20)]
-                hover:scale-105
-                hover:bg-[#D4AF37]
-                hover:text-black
-                transition-all
-                duration-300
-              "
-            >
-              <FaInstagram size={28} />
-            </a>
-
-
-            {/* Facebook */}
-            <a
-              href="https://www.facebook.com/share/1968hs3crX/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="
-                w-20
-                h-14
-                rounded-2xl
-                bg-[#1A1A1A]
-                border-2
-                border-[#D4AF37]
-                flex
-                items-center
-                justify-center
-                text-[#D4AF37]
-                shadow-[0_0_18px_rgba(212,175,55,.20)]
-                hover:scale-105
-                hover:bg-[#D4AF37]
-                hover:text-black
-                transition-all
-                duration-300
-              "
-            >
-              <FaFacebookF size={26} />
-            </a>
-
-          </div>
-
-        </div>
+        
+        
       </div>
     </>
   );
