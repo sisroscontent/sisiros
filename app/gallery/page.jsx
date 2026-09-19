@@ -45,7 +45,7 @@ const currentImages = filtered;
 
   return (
     <div className="min-h-screen py-16">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-8xl mx-auto px-11">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <p className="uppercase tracking-[4px] text-[#2B2522] text-sm font-semibold mb-3">
@@ -57,13 +57,13 @@ const currentImages = filtered;
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {currentImages.map((item, index) => (
             <div
               key={`${item.id}-${index}`}
               className="max-w-sm mx-auto bg-[#2E2E2E] rounded-lg overflow-hidden shadow-lg transition duration-300 hover:scale-105"
             >
-              <div className="relative w-full h-[550px] overflow-hidden">
+              <div className="relative w-full h-[580px] overflow-hidden">
                 {!loadedImages[item.image] && (
                   <div className="absolute inset-0 animate-pulse bg-gray-700" />
                 )}

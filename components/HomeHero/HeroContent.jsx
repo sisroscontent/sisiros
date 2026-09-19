@@ -2,7 +2,7 @@ export default function HeroContent() {
   return (
     <div className="flex flex-col md:my-9 h-full md:px-2 md:ml-5">
       {/* Small Heading */}
-      <p className="uppercase tracking-[4px] font-semibold text-[#2B2522] text-1 font-medium mb-8">
+      <p className="uppercase tracking-[4px] font-semibold text-[#2B2522] text-1  mb-8">
         Welcome to Sisro&apos;s
       </p>
 
