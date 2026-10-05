@@ -18,7 +18,7 @@ const slides = [
   // { src: "/images/photo-collage.png", alt: "Bridal collage" },
   { src: "/images/Bridal-new1.webp", alt: "Bridal look 1" },
   // { src: "/images/photo-collage.png", alt: "Bridal collage" },
-  // { src: "/images/Bridal-Image5.webp", alt: "Bridal look 5" },
+  { src: "/images/Bridal-Image5.webp", alt: "Bridal look 5" },
   // { src: "/images/photo-collage.png", alt: "Bridal collage" },
   // { src: "/images/Bridal-new3.webp", alt: "Bridal look 6" },
 ];
