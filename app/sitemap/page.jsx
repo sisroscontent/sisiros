@@ -27,8 +27,8 @@ export default function SitemapPage() {
   return (
     <main className="min-h-screen py-20 px-6">
       <div className="max-w-2xl mx-auto">
-        <h1 className="text-3xl font-bold text-[#2B2522] mb-2">Sitemap</h1>
-        <p className="text-[#E8E1D8] text-sm mb-10">sisros.com</p>
+        <h1 className="text-3xl font-bold text-white mb-2">Sitemap</h1>
+        <p className="text-white text-sm mb-10">sisros.com</p>
 
         <ul className="space-y-3">
           {pages.map(({ label, href }) => (
@@ -37,10 +37,10 @@ export default function SitemapPage() {
                 href={href}
                 className="flex items-center justify-between group py-3 px-4 rounded border border-[#222222] hover:border-[#D4AF37] transition-colors duration-200"
               >
-                <span className="text-[#E8E1D8] group-hover:text-[#2B2522] transition-colors duration-200">
+                <span className="text-white group-hover:text-[#D4AF37] transition-colors duration-200">
                   {label}
                 </span>
-                <span className="text-[#E8E1D8] text-sm group-hover:text-[#2B2522] transition-colors duration-200">
+                <span className="text-white text-sm group-hover:text-[#D4AF37] transition-colors duration-200">
                   sisros.com{href}
                 </span>
               </Link>
@@ -53,7 +53,7 @@ export default function SitemapPage() {
             href="/sitemap.xml"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#E8E1D8] hover:text-[#2B2522] text-sm transition-colors duration-200"
+            className="text-white hover:text-[#D4AF37] text-sm transition-colors duration-200"
           >
             sitemap.xml
           </a>
@@ -61,7 +61,7 @@ export default function SitemapPage() {
             href="/robots.txt"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#E8E1D8] hover:text-[#2B2522] text-sm transition-colors duration-200"
+            className="text-white hover:text-[#D4AF37] text-sm transition-colors duration-200"
           >
             robots.txt
           </a>

@@ -25,24 +25,35 @@ export default function ScrollPageNavigation() {
 
     if (currentIndex === -1) return;
 
-    setIsTransitioning(false);
+    // New page loaded → start from top
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
 
-    // --------------------------------
-    // NAVIGATE TO NEXT/PREVIOUS PAGE
-    // --------------------------------
+    // Fade new page in
+    const timer = setTimeout(() => {
+      setIsTransitioning(false);
+    }, 100);
+
     const navigateToPage = (index) => {
       if (isNavigating.current) return;
-
       if (index < 0 || index >= pages.length) return;
 
       isNavigating.current = true;
+
+      // Start fade-out
       setIsTransitioning(true);
 
-      router.push(pages[index]);
-
+      // Wait for fade-out before changing page
       setTimeout(() => {
-        isNavigating.current = false;
-      }, 1200);
+        router.push(pages[index]);
+
+        // Unlock after transition
+        setTimeout(() => {
+          isNavigating.current = false;
+        }, 1000);
+      }, 500);
     };
 
     // --------------------------------
@@ -57,7 +68,7 @@ export default function ScrollPageNavigation() {
 
       const atTop = window.scrollY <= 5;
 
-      // Scroll DOWN
+      // Scroll DOWN → NEXT PAGE
       if (
         event.deltaY > 0 &&
         atBottom &&
@@ -69,7 +80,7 @@ export default function ScrollPageNavigation() {
         return;
       }
 
-      // Scroll UP
+      // Scroll UP → PREVIOUS PAGE
       if (
         event.deltaY < 0 &&
         atTop &&
@@ -96,9 +107,10 @@ export default function ScrollPageNavigation() {
 
       const touchEndY = event.changedTouches[0].clientY;
 
-      const difference = touchStartY.current - touchEndY;
+      const difference =
+        touchStartY.current - touchEndY;
 
-      // Ignore very small movements
+      // Ignore small movements
       if (Math.abs(difference) < 60) return;
 
       const atBottom =
@@ -107,9 +119,7 @@ export default function ScrollPageNavigation() {
 
       const atTop = window.scrollY <= 10;
 
-      // --------------------------------
-      // SWIPE UP → NEXT PAGE
-      // --------------------------------
+      // Swipe UP → NEXT PAGE
       if (
         difference > 0 &&
         atBottom &&
@@ -119,9 +129,7 @@ export default function ScrollPageNavigation() {
         return;
       }
 
-      // --------------------------------
-      // SWIPE DOWN → PREVIOUS PAGE
-      // --------------------------------
+      // Swipe DOWN → PREVIOUS PAGE
       if (
         difference < 0 &&
         atTop &&
@@ -131,22 +139,33 @@ export default function ScrollPageNavigation() {
       }
     };
 
-    // Desktop
     window.addEventListener("wheel", handleWheel, {
       passive: false,
     });
 
-    // Mobile
-    window.addEventListener("touchstart", handleTouchStart, {
-      passive: true,
-    });
+    window.addEventListener(
+      "touchstart",
+      handleTouchStart,
+      {
+        passive: true,
+      }
+    );
 
-    window.addEventListener("touchend", handleTouchEnd, {
-      passive: true,
-    });
+    window.addEventListener(
+      "touchend",
+      handleTouchEnd,
+      {
+        passive: true,
+      }
+    );
 
     return () => {
-      window.removeEventListener("wheel", handleWheel);
+      clearTimeout(timer);
+
+      window.removeEventListener(
+        "wheel",
+        handleWheel
+      );
 
       window.removeEventListener(
         "touchstart",
@@ -169,7 +188,7 @@ export default function ScrollPageNavigation() {
         pointer-events-none
         bg-[#272626]
         transition-opacity
-        duration-700
+        duration-500
         ease-in-out
         ${
           isTransitioning

@@ -27,7 +27,6 @@ const categories = [
   "Celebrity",
 ];
 
-
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [loadedImages, setLoadedImages] = useState({});
@@ -37,21 +36,21 @@ export default function Gallery() {
       ? galleryData
       : galleryData.filter((item) => item.category === activeCategory);
 
-const currentImages = filtered;
+  const currentImages = filtered;
 
   const handleCategoryChange = (category) => {
-  setActiveCategory(category);
-};
+    setActiveCategory(category);
+  };
 
   return (
     <div className="min-h-screen py-16">
       <div className="max-w-8xl mx-auto px-11">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <p className="uppercase tracking-[4px] text-[#2B2522] text-sm font-semibold mb-3">
+          <p className="uppercase tracking-[4px] text-white text-sm font-semibold mb-3">
             OUR GALLERY
           </p>
-          <h1 className="text-4xl lg:text-4xl font-bold text-[#2B2522] leading-tight">
+          <h1 className="text-4xl lg:text-4xl font-bold text-white leading-tight">
             Snapshot Of Our Work
           </h1>
         </div>
@@ -88,8 +87,6 @@ const currentImages = filtered;
             </div>
           ))}
         </div>
-
-        
       </div>
     </div>
   );

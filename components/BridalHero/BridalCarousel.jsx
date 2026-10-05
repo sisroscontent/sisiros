@@ -9,18 +9,18 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 
 const slides = [
-  { src: "/images/photo-collage.png", alt: "Bridal collage" },
+  // { src: "/images/photo-collage.png", alt: "Bridal collage" },
   { src: "/images/Bridal-Image2.webp", alt: "Bridal look 2" },
-  { src: "/images/photo-collage.png", alt: "Bridal collage" },
-  { src: "/images/Bridal-new2.webp", alt: "Bridal look 4" },
-  { src: "/images/photo-collage.png", alt: "Bridal collage" },
+  // { src: "/images/photo-collage.png", alt: "Bridal collage" },
+  // { src: "/images/Bridal-new2.webp", alt: "Bridal look 4" },
+  // { src: "/images/photo-collage.png", alt: "Bridal collage" },
   { src: "/images/Bridal-Image3.webp", alt: "Bridal look 3" },
-  { src: "/images/photo-collage.png", alt: "Bridal collage" },
+  // { src: "/images/photo-collage.png", alt: "Bridal collage" },
   { src: "/images/Bridal-new1.webp", alt: "Bridal look 1" },
-  { src: "/images/photo-collage.png", alt: "Bridal collage" },
-  { src: "/images/Bridal-Image5.webp", alt: "Bridal look 5" },
-  { src: "/images/photo-collage.png", alt: "Bridal collage" },
-  { src: "/images/Bridal-new3.webp", alt: "Bridal look 6" },
+  // { src: "/images/photo-collage.png", alt: "Bridal collage" },
+  // { src: "/images/Bridal-Image5.webp", alt: "Bridal look 5" },
+  // { src: "/images/photo-collage.png", alt: "Bridal collage" },
+  // { src: "/images/Bridal-new3.webp", alt: "Bridal look 6" },
 ];
 
 export default function BridalCarousel() {

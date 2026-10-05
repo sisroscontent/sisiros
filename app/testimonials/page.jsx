@@ -74,10 +74,10 @@ export default function Testimonials() {
     <section className="py-16 px-6 lg:px-20">
       {/* Heading */}
       <div className="text-center max-w-3xl mx-auto">
-        <span className="uppercase tracking-[4px] text-[#2B2522] text-sm font-semibold">
+        <span className="uppercase tracking-[4px] text-white text-sm font-semibold">
           OUR TESTIMONIALS
         </span>
-        <h2 className="text-4xl lg:text-4xl font-bold text-[#2B2522] mt-4">
+        <h2 className="text-4xl lg:text-4xl font-bold text-white mt-4">
           Stories That Inspire Confidence
         </h2>
       </div>
@@ -89,7 +89,6 @@ export default function Testimonials() {
             key={item.id}
             className="grid md:grid-cols-2 border border-[#4A4A4A] rounded-lg overflow-hidden"
           >
-            {" "}
             <div className="relative w-[520px] h-[550px]">
               {!loadedImages[item.id] && (
                 <div className="absolute inset-0 animate-pulse bg-gray-700" />
@@ -155,9 +154,9 @@ function ReviewCard({ item }) {
           <Star key={i} size={20} className="fill-[#D4AF37] text-[#D4AF37]" />
         ))}
       </div>
-      <h2 className="text-3xl font-bold text-[#B48A66]">{item.name}</h2>
-      <p className="text-[#B48A66] md:mt-2">{item.role}</p>
-      <p className="text-[#B48A66] italic md:mt-8 leading-8">
+      <h2 className="text-3xl font-bold text-white">{item.name}</h2>
+      <p className="text-white md:mt-2">{item.role}</p>
+      <p className="text-white italic md:mt-8 leading-8">
         &quot;{item.review}&quot;
       </p>
     </div>

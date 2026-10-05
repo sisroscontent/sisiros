@@ -49,7 +49,7 @@ export default function Header() {
                 className={`uppercase text-[16px] font-semibold tracking-wide transition duration-300 ${
                   pathname === item.path
                     ? "text-white"
-                    : "text-[#B48A66] hover:text-white"
+                    : "text-white hover:text-[#D4AF37]"
                 }`}
               >
                 {item.name}
@@ -61,7 +61,7 @@ export default function Header() {
           <div className="hidden lg:block">
             {/* <Link
               href="/form"
-              className="px-6 py-3 border border-[#D4AF37] rounded-md text-[#2B2522] uppercase text-sm font-semibold tracking-wider hover:bg-[#D4AF37] hover:text-black transition duration-300"
+              className="px-6 py-3 border border-[#D4AF37] rounded-md text-white uppercase text-sm font-semibold tracking-wider hover:bg-[#D4AF37] hover:text-black transition duration-300"
             >
               Enquire
             </Link> */}
@@ -70,7 +70,7 @@ export default function Header() {
           {/* Mobile Hamburger */}
           <button
             onClick={() => setMenuOpen(true)}
-            className="lg:hidden text-[#F5F1EA]"
+            className="lg:hidden text-white"
             aria-label="Open menu"
           >
             <HiOutlineBars3 size={30} />
@@ -97,7 +97,7 @@ export default function Header() {
           <button onClick={() => setMenuOpen(false)} aria-label="Close menu">
             <HiOutlineXMark
               size={30}
-              className="text-[#F5F1EA] hover:text-[#2B2522]"
+              className="text-white hover:text-[#D4AF37]"
             />
           </button>
         </div>
@@ -111,17 +111,14 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
               className={`px-6 py-4 uppercase transition ${
                 pathname === item.path
-                  ? "text-[#B48A66]"
-                  : "text-[#B48A66] hover:text-[#B48A66]"
+                  ? "text-[#D4AF37]"
+                  : "text-white hover:text-[#D4AF37]"
               }`}
             >
               {item.name}
             </Link>
           ))}
         </nav>
-
-        
-        
       </div>
     </>
   );

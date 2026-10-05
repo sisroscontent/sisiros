@@ -122,7 +122,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={`${outfit.className} bg-[#b89576] antialiased`}>
+      <body className={`${outfit.className} bg-[#3F090C] antialiased`}>
         <JsonLd schema={organizationSchema} />
         <JsonLd schema={websiteSchema} />
           <ScrollPageNavigation />
