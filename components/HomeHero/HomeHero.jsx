@@ -94,7 +94,7 @@ export default function HomeHero() {
 
         <div
           className="
-            max-w-[1400px]
+            max-w-[1300px]
             mx-auto
             grid
             grid-cols-1

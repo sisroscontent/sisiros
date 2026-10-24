@@ -27,7 +27,7 @@ export default function BridalCarousel() {
   const [loadedImages, setLoadedImages] = useState({});
 
   return (
-    <div className="w-full max-w-[520px] h-[400px] lg:h-[620px] my-3 md:my-6 rounded-[5px] overflow-hidden shadow-xl border-[4px] border-[#464444]">
+    <div className="w-full max-w-[580px] h-[400px] lg:h-[620px] my-3 md:my-6 rounded-[5px] overflow-hidden shadow-xl border-[4px] border-[#464444]">
       {" "}
       <Swiper
         modules={[Autoplay, EffectFade]}
