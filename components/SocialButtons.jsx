@@ -36,7 +36,7 @@ export default function SocialButtons() {
           h-12
           rounded-lg
           bg-[#D7EAEA]
-          text-[#B48A66]
+          text-[#3F090C]
           flex
           items-center
           justify-center

@@ -44,7 +44,7 @@ export default function Gallery() {
 
   return (
     <div className="min-h-screen py-16">
-      <div className="max-w-8xl mx-auto px-11">
+      <div className="max-w-8xl md:mx-auto px-6 md:px-11">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <p className="uppercase tracking-[4px] text-white text-sm font-semibold mb-3">
@@ -56,13 +56,13 @@ export default function Gallery() {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-1 gap-y-[20px] md:gap-y-[60px]">
           {currentImages.map((item, index) => (
             <div
               key={`${item.id}-${index}`}
-              className="max-w-sm mx-auto bg-[#2E2E2E] rounded-lg overflow-hidden shadow-lg transition duration-300 hover:scale-105"
+              className="md:max-w-sm md:mx-auto mb-0 bg-[#2E2E2E] rounded-lg overflow-hidden shadow-lg transition duration-300 hover:scale-105"
             >
-              <div className="relative w-full h-[580px] overflow-hidden">
+              <div className="relative w-full h-[500px] md:h-[580px] overflow-hidden">
                 {!loadedImages[item.image] && (
                   <div className="absolute inset-0 animate-pulse bg-gray-700" />
                 )}

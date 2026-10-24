@@ -111,7 +111,7 @@ export default function HomeHero() {
               min-h-[400px]
               lg:min-h-[580px]
             
-              p-6
+              px-1
               md:p-8
               lg:p-10
               overflow-hidden

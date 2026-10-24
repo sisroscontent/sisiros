@@ -1,5 +1,11 @@
 import HomeHero from '../components/HomeHero/HomeHero';
 import JsonLd from '../components/JsonLd';
+import Bridal from './bridal/page';
+import Academy from './courses/page';
+import Gallery from './gallery/page';
+import Testimonials from './testimonials/page';
+
+
 
 const BASE_URL = 'https://sisros.com';
 
@@ -83,7 +89,26 @@ export default function Home() {
   return (
     <>
       <JsonLd schema={homeSchema} />
-      <HomeHero />
+
+      <section id="home">
+        <HomeHero />
+      </section>
+
+      <section id="bridal" className="scroll-mt-24">
+        <Bridal />
+      </section>
+
+      <section id="courses" className="scroll-mt-24">
+        <Academy />
+      </section>
+
+      <section id="gallery" className="scroll-mt-24">
+        <Gallery />
+      </section>
+
+       <section id="testimonials" className="scroll-mt-24">
+        <Testimonials/>
+      </section>
     </>
   );
 }

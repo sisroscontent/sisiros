@@ -64,7 +64,7 @@ export default function Academy() {
           {filteredCourses.map((course) => (
             <div
               key={course.id}
-              className="group bg-[#333333] border-2 border-[#9f9c9c] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:border-[#D4AF37] transition-all duration-500"
+              className="group bg-[#333333] border-2 border-[#9f9c9c] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:border-[#3F090C] transition-all duration-500"
             >
               {/* Image */}
               <div className="relative w-full h-[520px]">
@@ -87,7 +87,7 @@ export default function Academy() {
 
               {/* Content */}
               <div className="p-1 text-center bg-[#e2e1da]">
-                <h3 className="text-2xl font-bold text-white leading-tight h-[80px] flex items-center justify-center text-center group-hover:text-white transition">
+                <h3 className="text-2xl font-bold text-[#3F090C] leading-tight h-[80px] flex items-center justify-center text-center transition">
                   {course.title}
                 </h3>
               </div>

@@ -7,19 +7,46 @@ import { usePathname } from "next/navigation";
 import { HiOutlineBars3, HiOutlineXMark } from "react-icons/hi2";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 
+// const navItems = [
+//   { name: "Home", path: "/" },
+//   { name: "Bridal", path: "/bridal" },
+//   { name: "Courses", path: "/courses" },
+//   { name: "Gallery", path: "/gallery" },
+//   { name: "Testimonials", path: "/testimonials" },
+//   // { name: 'About', path: '/about' },
+//   // { name: 'Contact', path: '/contact' },
+// ];
+
 const navItems = [
-  { name: "Home", path: "/" },
-  { name: "Bridal", path: "/bridal" },
-  { name: "Courses", path: "/courses" },
-  { name: "Gallery", path: "/gallery" },
-  { name: "Testimonials", path: "/testimonials" },
-  // { name: 'About', path: '/about' },
-  // { name: 'Contact', path: '/contact' },
+  { name: "Home", path: "#home" },
+  { name: "Bridal", path: "#bridal" },
+  { name: "Courses", path: "#courses" },
+  { name: "Gallery", path: "#gallery" },
+  { name: "Testimonials", path: "#testimonials" },
 ];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+
+  const handleNavClick = (event, path) => {
+    if (pathname !== "/") {
+      return; // Keep existing page navigation on other routes
+    }
+
+    event.preventDefault();
+
+    const target = document.getElementById(path.slice(1));
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+
+    setMenuOpen(false);
+  };
 
   return (
     <>
@@ -27,8 +54,9 @@ export default function Header() {
       <header className="sticky top-0 z-50 bg-[#20283B] border-b border-[#30384B]">
         <div className="max-w-7xl mx-auto h-20 px-4 lg:px-8 flex items-center justify-between">
           {/* Logo */}
+          {/* Logo */}
           <div className="flex items-center">
-            <Link href="/">
+            <Link href="#home">
               <Image
                 src="/logo/Sisiro_logo.png"
                 alt="Sisro's Logo"
@@ -46,11 +74,19 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.path}
-                className={`uppercase text-[16px] font-semibold tracking-wide transition duration-300 ${
-                  pathname === item.path
-                    ? "text-white"
-                    : "text-white hover:text-[#D4AF37]"
-                }`}
+                onClick={(event) => {
+                  event.preventDefault();
+
+                  const target = document.getElementById(item.path.slice(1));
+
+                  if (target) {
+                    target.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  }
+                }}
+                className="uppercase text-[16px] font-semibold tracking-wide transition duration-300 text-white hover:text-[#a93e44]"
               >
                 {item.name}
               </Link>
@@ -88,7 +124,7 @@ export default function Header() {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 right-0 h-screen w-72 bg-[#111111] border-l border-[#2d2d2d] z-50 transition-transform duration-300 ${
+        className={`fixed top-0 right-0 h-screen w-72 bg-[#242424] border-l border-[#2d2d2d] z-50 transition-transform duration-300 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -97,7 +133,7 @@ export default function Header() {
           <button onClick={() => setMenuOpen(false)} aria-label="Close menu">
             <HiOutlineXMark
               size={30}
-              className="text-white hover:text-[#D4AF37]"
+              className="text-white hover:text-[#3F090C]"
             />
           </button>
         </div>
@@ -108,12 +144,21 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.path}
-              onClick={() => setMenuOpen(false)}
-              className={`px-6 py-4 uppercase transition ${
-                pathname === item.path
-                  ? "text-[#D4AF37]"
-                  : "text-white hover:text-[#D4AF37]"
-              }`}
+              onClick={(event) => {
+                event.preventDefault();
+
+                const target = document.getElementById(item.path.slice(1));
+
+                if (target) {
+                  target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }
+
+                setMenuOpen(false);
+              }}
+              className="px-6 py-4 uppercase transition text-white hover:text-[#D4AF37]"
             >
               {item.name}
             </Link>

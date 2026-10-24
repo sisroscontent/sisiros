@@ -86,8 +86,8 @@ export default function FormContent() {
                 className={`px-10 py-4 rounded-t-xl border transition-all duration-300
       ${
         activeTab === "makeup"
-          ? "bg-[#B48A66] border-[#B48A66]  border-b-[#1A1A1A] text-white"
-          : "bg-[#242424] border-[#B48A66]  text-[#E8E1D8] hover:text-[#B48A66]"
+          ? "bg-[#3F090C] border-[#3F090C] border-b-[#1A1A1A] text-white"
+          : "bg-[#242424] border-[#3F090C]  text-[#E8E1D8] hover:text-[#B48A66]"
       }`}
               >
                 Makeup Form
@@ -98,8 +98,8 @@ export default function FormContent() {
                 className={`ml-2 px-10 py-4 rounded-t-xl border transition-all duration-300
       ${
         activeTab === "course"
-          ? "bg-[#B48A66]  border-[#B48A66]  border-b-[#1A1A1A] text-white"
-          : "bg-[#20283B]  border-[#B48A66] text-white hover:text-[#B48A66]"
+          ? "bg-[#3F090C]  border-[#3F090C]  border-b-[#1A1A1A] text-white"
+          : "bg-[#20283B]  border-[#3F090C] text-white hover:text-[#3F090C]"
       }`}
               >
                 Course Form
@@ -108,7 +108,7 @@ export default function FormContent() {
           </div>
 
           {/* Form Container */}
-          <div className="-mt-[1px] bg-[#20283B] border border-[#B48A66] rounded-b-xl rounded-tr-xl p-8">
+          <div className="-mt-[1px] bg-[#20283B] border border-[#3F090C] rounded-b-xl rounded-tr-xl p-8">
             {activeTab === "makeup" ? (
               <form
                 onSubmit={handleSubmit(submitBooking)}
@@ -253,7 +253,7 @@ export default function FormContent() {
                   </p>
                 )}
 
-                <button className="bg-[#B48A66]  hover:bg-yellow-400 text-black font-semibold py-3 rounded-lg md:col-span-2 transition">
+                <button className="bg-[#3F090C]  hover:bg-yellow-400 text-white font-semibold py-3 rounded-lg md:col-span-2 transition">
                   Book Now
                 </button>
               </form>

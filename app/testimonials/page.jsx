@@ -55,16 +55,16 @@ const testimonialData = [
     review:
       "Sisro\'s program was thorough and well-organized. The instructors made learning engaging and rewarding.",
   },
-  {
-    id: 6,
-    category: "Academy",
-    name: "Divya Krishnamurthy",
-    role: "Academy Graduate",
-    img: "/images/Gallery/Galleryy-6.png",
-    rating: 5,
-    review:
-      "Sisro's Academy gave me the skills and confidence to pursue my passion professionally. The mentors truly care about your growth.",
-  },
+  // {
+  //   id: 6,
+  //   category: "Academy",
+  //   name: "Divya Krishnamurthy",
+  //   role: "Academy Graduate",
+  //   img: "/images/Gallery/Galleryy-6.png",
+  //   rating: 5,
+  //   review:
+  //     "Sisro's Academy gave me the skills and confidence to pursue my passion professionally. The mentors truly care about your growth.",
+  // },
 ];
 
 export default function Testimonials() {
