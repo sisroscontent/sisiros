@@ -83,16 +83,16 @@ export default function HeroCarousel() {
       <picture>
         <source
           media="(max-width: 767px)"
-          srcSet="/images/Gallery/Gallery-8.webp"
+          srcSet="/images/Gallery/sisrostest.jpg"
         />
 
         <source
           media="(max-width: 1199px)"
-          srcSet="/images/Gallery/Gallery-8.webp"
+          srcSet="/images/Gallery/sisrostest.jpg"
         />
 
         <Image
-          src="/images/Gallery/Gallery-8.webp"
+          src="/images/Gallery/sisrostest.jpg"
           alt="Sisro Makeup"
           fill
           priority
