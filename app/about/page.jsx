@@ -7,7 +7,7 @@ export const metadata = {
   title: 'About Us | Sisro\'s Makeup Studio',
   description:
     "Meet the team behind Sisro\'s — Hyderabad's luxury bridal makeup studio. Years of artistry, personalised care, and a passion for making every client feel their most beautiful.",
-  keywords: ['about Sisro\'s', 'makeup artist Hyderabad', 'luxury beauty studio', 'bridal makeup team Hyderabad'],
+  keywords: ['about Sisro\'s', 'makeup artist Hyderabad', 'luxury beauty studio', 'bridal makeup team Hyderabad' , 'best makeup artist in hyderabad'],
   alternates: { canonical: `${BASE_URL}/about` },
   openGraph: {
     type: 'website',
