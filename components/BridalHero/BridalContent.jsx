@@ -1,9 +1,9 @@
 export default function BridalContent() {
   return (
     <div className="flex flex-col md:my-9 h-full md:px-2 md:ml-5">
-      <p className="uppercase tracking-[4px] text-white text-1   mb-2 md:mb-7">
+      {/* <p className="uppercase tracking-[4px] text-white text-1   mb-2 md:mb-7">
         Bridal Makeup
-      </p>
+      </p> */}
 
       <p className="text-white   lg:text-[19px] leading-8 max-w-xl mb-4 md:mb-6">
         At Sisro&apos;s we believe that every wedding day deserves makeup that

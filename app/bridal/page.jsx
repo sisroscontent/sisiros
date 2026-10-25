@@ -63,6 +63,14 @@ export default function Bridal() {
   return (
     <>
       <JsonLd schema={bridalSchema} />
+      <div className="text-center max-w-3xl mx-auto mb-4 mt-4">
+          {/* <p className="uppercase tracking-[4px] text-white text-sm font-semibold mb-3">
+            Sisro&apos;s ACADEMY
+          </p> */}
+          <h1 className="text-4xl sm:text-4xl font-bold text-white leading-tight">
+             Bridal Makeup
+          </h1>
+        </div>
       <BridalHero />
     </>
   );
