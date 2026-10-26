@@ -6,7 +6,7 @@ export default function SocialButtons() {
       
       {/* Instagram */}
       <a
-        href="https://www.instagram.com/sisiros_hyd?igsh=dmVvbmF1bTJsMnVm"
+        href="https://www.instagram.com/sisros_hyd"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram"
@@ -27,7 +27,7 @@ export default function SocialButtons() {
 
       {/* Facebook */}
       <a
-        href="https://www.facebook.com/share/1968hs3crX/"
+        href="https://www.facebook.com/profile.php?id=61594257306566"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Facebook"
